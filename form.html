@@ -1,0 +1,45 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1 id="siteHeadline">myHEALTH</h1>
+        <p id="siteTagline"> Welcome to myHEALTH portal.</p>
+        <ul id="navlinks">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </header>
+
+    <div>
+        <form action="" class="input" id="form">
+            <div class="input">
+                <label for="mRev">Monthly Revenue: </label>
+                <input type="number" mRev="mRev" id="mRev" required>
+            </div>
+            <div class="input">
+                <label for="mEx">Monthly Expendeture: </label>
+                <input type="number" name="mEx" id="mEx" required>
+            </div>
+            <div class="input">
+                <label for="credit">Credit Score: </label>
+                <input type="number" name="credit" id="credit" required>
+            </div>
+            <button type="button" onclick="estimate(); return false;">Estimate Based On Location (Unreliable)</button>
+            <button type="button" onclick="form(); return false;">Find Results</button>
+    </div>
+    </form>
+    </div>
+
+    <footer>
+        <p>Copyright 2024. WIP. All rights reserved.</p>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
