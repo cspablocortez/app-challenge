@@ -158,4 +158,8 @@ function estimate() {
 
 }
 
+function change() {
+	https://stormtr00p3r.github.io/app-challenge/
+}
+
 // next page
