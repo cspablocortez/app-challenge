@@ -141,9 +141,4 @@ function form() {
 function estimate() {
 
 }
-
-function change() {
-	window.location.href("https://stormtr00p3r.github.io/app-challenge/form.html")
-}
-
 // next page
