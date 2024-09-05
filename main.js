@@ -132,26 +132,10 @@ function form() {
     let mEx = document.getElementById('mEx').value;
     let credit = document.getElementById('credit').value;
 
-    
-    // create a td for name, age, condition, date, doctor
-    let newRow = tableBody.insertRow();
-    let nameCell = newRow.insertCell();
-    let ageCell = newRow.insertCell();
-    let conditionCell = newRow.insertCell();
-    let dateCell = newRow.insertCell();
-    let doctorCell = newRow.insertCell();
-
-    console.log('Patient added succesfully.');
-
-    nameCell.innerHTML = name;
-    ageCell.innerHTML = age;
-    conditionCell.innerHTML = condition;
-    dateCell.innerHTML = date;
-    doctorCell.innerHTML = doctor;
+    console.log('saved');
 
     // Form reset 
-    let form = document.getElementById('patientForm');
-    form.reset();
+    let form = document.getElementById('form');
 }
 
 function estimate() {
@@ -159,7 +143,7 @@ function estimate() {
 }
 
 function change() {
-	https://stormtr00p3r.github.io/app-challenge/
+	window.location.href("https://stormtr00p3r.github.io/app-challenge/form.html")
 }
 
 // next page
