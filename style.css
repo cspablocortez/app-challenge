@@ -1,6 +1,7 @@
 button {
+    font-family: "Cinzel";
     border: none;
-    background-color: #7e3e95;
+    background-color: #cb6ce6;
     color: white;
     padding: 15px;
     font-size: 1.3rem;
@@ -9,57 +10,94 @@ button {
 }
 
 button:hover {
+    font-family: "Cinzel";
     cursor: pointer;
     opacity: 0.6;
 }
 
 .home {
+    font-family: "Cinzel";
     position: fixed;
     top: 10px;
     right: 10px;
 }
 
 a {
+    font-family: "Cinzel";
     text-decoration: none;
     color: aliceblue;
 }
 
 body {
+    font-family: "Cinzel";
     text-align: center;
-    background-image: linear-gradient(to right, #311257, #a559a3);
+    background-image: linear-gradient(to right, #8c52ff, #ff914d);
 }
 
+.cinzel {
+  font-family: "Cinzel", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
 
-
-h1 {
+.formT {
+    font-family: "Cinzel";
     color: aliceblue;
+    position: fixed;
+    top: 0;
+    left: 50;
 }
 
-h2 {
-    color: aliceblue;   
+.homeT {
+    font-family: "Cinzel";
+    color: aliceblue;  
 }
 
-h3 {
+.h35 {
+    font-family: "Cinzel";
     color: aliceblue;
     margin-left: 10%;
     margin-right: 10%;
 }
 
+h1 {
+    
+}
+
+h2 {
+ 
+}
+
+h3 {
+
+}
+
 footer {
+    font-family: "Cinzel";
     position: fixed;
     bottom: 0;
     left: 10px;
 }
 
 p {
+    font-family: "Cinzel";
     color: aliceblue;
 }
 
 label {
+    font-family: "Cinzel";
     color: aliceblue;
 }
 
 input {
-    background-color: #7e3e95;
+    font-family: "Cinzel";
+    background-color: #cb6ce6;
     color: aliceblue;
+}
+
+.imgwrap {
+    margin: 0%;
+    max-height: 200px;
+    transition: ease-out;
+    overflow: hidden;
 }
