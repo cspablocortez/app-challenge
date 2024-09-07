@@ -1,6 +1,6 @@
 button {
     border: none;
-    background-color: #7e93fb;
+    background-color: #7e3e95;
     color: white;
     padding: 15px;
     font-size: 1.3rem;
@@ -13,6 +13,11 @@ button:hover {
     opacity: 0.6;
 }
 
+.home {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+}
 
 a {
     text-decoration: none;
@@ -21,11 +26,29 @@ a {
 
 body {
     text-align: center;
-    background-color: #456784;
+    background-image: linear-gradient(to right, #311257, #a559a3);
 }
+
+
 
 h1 {
     color: aliceblue;
+}
+
+h2 {
+    color: aliceblue;   
+}
+
+h3 {
+    color: aliceblue;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 10px;
 }
 
 p {
@@ -37,6 +60,6 @@ label {
 }
 
 input {
-    background-color: #5bbacb;
+    background-color: #7e3e95;
     color: aliceblue;
 }
