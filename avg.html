@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Kalnia+Glaze:wght@100..700&display=swap"
+        rel="stylesheet">
+    <meta charset="UTF-8">
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <script src="main.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>"WIP"</title>
+</head>
+
+<body>
+    <div class="homeT">
+        <h1 class="title">Bugetting</h1>
+        <label for="spent">Spent: </label>
+        <input type="number" id="spent" name="spent">
+        <ul id="list">
+
+        </ul>
+        <h3 id="buget">Buget: 1000</h3>
+        <h2 class="title">Alterinates</h3>
+            
+            <script>
+                function spent() {
+                    list = document.getElementById("list");
+                    num.forEach((s) => {
+                        let li = document.createElement("li");
+                        li.innerText = s;
+                        li.classList.add("num");
+                        list.appendChild(li);
+                    });
+                }
+
+                spent()
+                console.log(document.getElementById("spent"))
+
+                function sub() {
+                    // Get the value from the inputs
+                    var buget = document.getElementById("buget");
+                    var spent = document.getElementById("spent");
+                    var remain = Math.abs(Number(spent.value));
+
+
+                    remain = Number(buget.innerText.substr(6)) - remain;
+                    console.log("spent")
+
+                    buget.innerText = "Buget: " + remain;
+
+                    list = document.getElementById("list");
+                    let li = document.createElement("li");
+                    li.innerText = "11/11 $" + spent.value;
+                    li.classList.add("num");
+                    list.appendChild(li);
+                }
+
+                // Enter is pressed
+                document.getElementById("spent").addEventListener("keyup", function (event) {
+                    if(document.getElementById("spent").value != "") {
+                        if (event.keyCode == 13) {  
+                            console.log("enter pressed")
+                            sub();
+                        }
+                    }
+                });
+            </script>
+            <a href="form.html"><button>Back</button></a>
+    </div>
+</body>
+
+</html>

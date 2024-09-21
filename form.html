@@ -4,44 +4,97 @@
 <head>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Kalnia+Glaze:wght@100..700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Kalnia+Glaze:wght@100..700&display=swap"
+        rel="stylesheet">
     <meta charset="UTF-8">
     <link href="style.css" rel="stylesheet" type="text/css" />
+    <script src="main.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
 <body>
     <header>
         <div>
-            <div class="imgwrap">
+            <!-- <div class="imgwrap">
                 <img src="https://i.pinimg.com/originals/f9/da/90/f9da90b27250affdde4a300b4af2f767.jpg">
-            </div>
+            </div> -->
             <button class="home"><a href="index.html">Home</a></button>
-            <div class="formT"> 
-                <h1>BetWise</h1>
-                <h2> Welcome to the BetWise Webapp</h2>
+            <div class="leftm">
+                <div class="formT">
+                    <h1 class="title">BetWise</h1>
+                </div>
             </div>
         </div>
     </header>
 
-    <div>
-        <form action="" class="input" id="form">
-            <div class="input">
-                <label for="mRev">Monthly Revenue: </label>
-                <input type="number" mRev="mRev" id="mRev" required>
-            </div>
-            <div class="input">
-                <label for="mEx">Monthly Expendeture: </label>
-                <input type="number" name="mEx" id="mEx" required>
-            </div>
-            <div class="input">
-                <label for="credit">Credit Score: </label>
-                <input type="number" name="credit" id="credit" required>
-            </div>
-            <button type="button" onclick="estimate(); return false;">Estimate Based On Location (Unreliable)</button>
-            <!-- <button type="button" onclick="form(); return false;">Find Results</button> -->
+    <div class="light">
+        <h2 class="wid2"> Welcome to the BetWise Webapp 🎲✨ </h2>
+    </div>
+
+    <div class="grey">
+        <h3 class="wid">
+            Personalized Budgeting: Set your monthly spending limit and receive reminders to stay within your budget. <br>
+            Reality Check Alerts: Get periodic notifications about how long you've been playing and your current spending. It helps you stay aware and in control. <br>
+        </h3>
+    </div>
+
+    <div class="blue"> 
+        <h3 class="wid2">
+            Game Recommendations: Discover games that fit your style and budget, focusing on fun rather than high stakes. <br>
+            Self-Assessment Tools: Take quick quizzes to evaluate your gambling habits and receive tailored tips for improvement. <br>
+        </h3>
+    </div>
+
+    <div class="purple">
+        <h3 class="wid">
+            Community Support: Join a community of responsible gamblers, share experiences, and access expert advice. <br>
+            Resources & Helplines: Easily access information on responsible gambling practices and support services. <br>
+        </h3>
+    </div>
+
+    <div class="rightm">
+        <form id="myForm">
+            <label for="mRev">Monthly Revenue:</label>
+            <input class="grey2" type="number" id="mRev" name="mRev" oninput="spend()"><br><br>
+            <img src="" class="img" alt="1">
+
+            <label for="mEx">Monthly Expendeture:</label>
+            <input class="grey2" type="number" id="mEx" name="mEx" oninput="spend()"><br><br>
+
+            <label for="credit">Credit Score:</label>
+            <input class="grey2" type="number" id="credit" name="credit" oninput="spend()"><br><br>
+
+            <p id="ans">(Your Number Will Be Shown Here)</p>
+        </form>
+        <button type="button" onclick="estimate(); return false;">Estimate Based On Location (Unreliable)</button>
+        <!-- <button type="button" onclick="form(); return false;">Find Results</button> -->
     </div>
     </form>
+
+    <script>
+        function spend() {
+            // Get the value from the inputs
+            var rev = Number(document.getElementById("mRev").value);
+            var ex = Number(document.getElementById("mEx").value);
+            var cred = Number(document.getElementById("credit").value);
+
+            var ans = rev - ex;
+
+            console.log(rev, ex);
+
+            // Update the num text
+            if (ans >= 1000 && cred > 300) {
+                ans = ans * .50;
+                document.getElementById("ans").innerText = ans;
+            } else if (ans >= 50000 && cred > 300) {
+                ans = ans * .75;
+                document.getElementById("ans").innerText = ans;
+            } else {
+                document.getElementById("ans").innerText = "Nuh uh fella";
+            }
+        }
+    </script>
     </div>
 
     <footer>

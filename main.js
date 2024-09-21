@@ -124,19 +124,26 @@ async function fetchAstroData() { // sunset,
 }
 
 function form() {
-    // get table
-    let tableBody = document.getElementById('formlist');
-
-    // get input
-    let mRev = document.getElementById('mRev').value;
-    let mEx = document.getElementById('mEx').value;
-    let credit = document.getElementById('credit').value;
+	var ex = getElementById('mEx');
+	var rev = getElementById('mRev');
+	var cred = getElementById('credit');
 
     console.log('saved');
 
-    // Form reset 
-    let form = document.getElementById('form');
+	var ans = ex + rev +cred;
+    
+	document.getElementById('ans').style.display = ans;
 }
+ 
+let num = [
+	"9/25 $52",
+    "9/17 $86",
+    "9/14 $64",
+	"9/8 $6",
+    "9/2 $57"
+];
+
+
 
 function estimate() {
 
