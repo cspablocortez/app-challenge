@@ -34,36 +34,42 @@
 
     <div class="grey">
         <h3 class="wid">
-            Personalized Budgeting: Set your monthly spending limit and receive reminders to stay within your budget. <br>
-            Reality Check Alerts: Get periodic notifications about how long you've been playing and your current spending. It helps you stay aware and in control. <br>
+            Personalized Budgeting: Set your monthly spending limit and receive reminders to stay within your budget.
+            <br>
+            Reality Check Alerts: Get periodic notifications about how long you've been playing and your current
+            spending. It helps you stay aware and in control. <br>
         </h3>
     </div>
 
-    <div class="blue"> 
+    <div class="blue">
         <h3 class="wid2">
-            Game Recommendations: Discover games that fit your style and budget, focusing on fun rather than high stakes. <br>
-            Self-Assessment Tools: Take quick quizzes to evaluate your gambling habits and receive tailored tips for improvement. <br>
-            <img src="images/bank.jpg" alt="chips" height="250px">
+            Game Recommendations: Discover games that fit your style and budget, focusing on fun rather than high
+            stakes. <br>
+            Self-Assessment Tools: Take quick quizzes to evaluate your gambling habits and receive tailored tips for
+            improvement. <br>
+
             <img src="images/chips.jpg" alt="chips" height="250px">
-            <img src="images/money.jpg" alt="chips" height="250px">
-            <img src="images/slots.jpg" alt="chips" height="250px">
-            <img src="images/table.jpg" alt="chips" height="250px">
+
+            <img src="images/bank.jpg" alt="bank" height="175px">
+
         </h3>
     </div>
 
     <div class="purple">
         <h3 class="wid">
-            Community Support: Join a community of responsible gamblers, share experiences, and access expert advice. <br>
-            Resources & Helplines: Easily access information on responsible gambling practices and support services. <br>
+            Community Support: Join a community of responsible gamblers, share experiences, and access expert advice.
+            <br>
+            Resources & Helplines: Easily access information on responsible gambling practices and support services.
+            <br>
         </h3>
-        
+
     </div>
 
     <div class="rightm">
         <form id="myForm">
             <label for="mRev">Monthly Revenue:</label>
             <input class="grey2" type="number" id="mRev" name="mRev" oninput="spend()"><br><br>
-            
+
 
             <label for="mEx">Monthly Expendeture:</label>
             <input class="grey2" type="number" id="mEx" name="mEx" oninput="spend()"><br><br>
@@ -77,6 +83,53 @@
         <!-- <button type="button" onclick="form(); return false;">Find Results</button> -->
     </div>
     </form>
+
+
+    <div class="over">
+        <div class="space">
+            <div class="flip">
+                <div class="inner">
+                    <div class="front">
+                        <div class="im">
+                            <img src="images/table.jpg" alt="table" height="300px">
+                        </div>
+                    </div>
+                    <div class="back">
+                        <h1>see your spending</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="space">
+            <div class="flip">
+                <div class="inner">
+                    <div class="front">
+                        <div class="im">
+                            <img src="images/money.jpg" alt="money" height="300px">
+                        </div>
+                    </div>
+                    <div class="back">
+                        <h1>save your money</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="space">
+            <div class="flip">
+                <div class="inner">
+                    <div class="front">
+                        <div class="im">
+                            <img src="images/slots.jpg" alt="slots" height="300">
+                        </div>
+                    </div>
+                    <div class="back">
+                        <h1>just because the house always wins it doesnt mean you have to lose</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
 
     <script>
         function spend() {
