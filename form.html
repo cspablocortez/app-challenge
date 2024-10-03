@@ -1,166 +1,99 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Kalnia+Glaze:wght@100..700&display=swap"
-        rel="stylesheet">
-    <meta charset="UTF-8">
-    <link href="style.css" rel="stylesheet" type="text/css" />
-    <script src="main.js"></script>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.simplecss.org/simple.min.css">
+  <title>BetWise</title>
+  <style>
+    .two-columns {
+      /* display: flex;
+      justify-content: flex-start;
+      /* gap: 1; */ */
+    }
+  
+  </style>
 </head>
-
 <body>
-    <header>
+  
+  <header>
+    <nav>
+      <a href="/index.html">Home</a>
+    </nav>
+  </header>
+  
+  
+  <main>
+    <h2>Welcome to BetWise 🎲✨</h2>
+      
         <div>
-            <!-- <div class="imgwrap">
-                <img src="https://i.pinimg.com/originals/f9/da/90/f9da90b27250affdde4a300b4af2f767.jpg">
-            </div> -->
-            <button class="home"><a href="index.html">Home</a></button>
-            <div class="leftm">
-                <div class="formT">
-                    <h1 class="title">BetWise</h1>
-                </div>
-            </div>
+          <h3>Personalized Budgeting</h3>
+          <p>Set your monthly spending limit and receive reminders to stay within your budget.</p>
         </div>
-    </header>
-
-    <div class="light">
-        <h2 class="wid2"> Welcome to the BetWise Webapp 🎲✨ </h2>
-    </div>
-
-    <div class="grey">
-        <h3 class="wid">
-            Personalized Budgeting: Set your monthly spending limit and receive reminders to stay within your budget.
-            <br>
-            Reality Check Alerts: Get periodic notifications about how long you've been playing and your current
-            spending. It helps you stay aware and in control. <br>
-        </h3>
-    </div>
-
-    <div class="blue">
-        <h3 class="wid2">
-            Game Recommendations: Discover games that fit your style and budget, focusing on fun rather than high
-            stakes. <br>
-            Self-Assessment Tools: Take quick quizzes to evaluate your gambling habits and receive tailored tips for
-            improvement. <br>
-
-            <img src="images/chips.jpg" alt="chips" height="250px">
-
-            <img src="images/bank.jpg" alt="bank" height="175px">
-
-        </h3>
-    </div>
-
-    <div class="purple">
-        <h3 class="wid">
-            Community Support: Join a community of responsible gamblers, share experiences, and access expert advice.
-            <br>
-            Resources & Helplines: Easily access information on responsible gambling practices and support services.
-            <br>
-        </h3>
-
-    </div>
-
-    <div class="rightm">
-        <form id="myForm">
-            <label for="mRev">Monthly Revenue:</label>
-            <input class="grey2" type="number" id="mRev" name="mRev" oninput="spend()"><br><br>
-
-
-            <label for="mEx">Monthly Expendeture:</label>
-            <input class="grey2" type="number" id="mEx" name="mEx" oninput="spend()"><br><br>
-
-            <label for="credit">Credit Score:</label>
-            <input class="grey2" type="number" id="credit" name="credit" oninput="spend()"><br><br>
-
-            <p id="ans">(Your Number Will Be Shown Here)</p>
-        </form>
-        <button type="button" onclick="estimate(); return false;">Estimate Based On Location (Unreliable)</button>
-        <!-- <button type="button" onclick="form(); return false;">Find Results</button> -->
-    </div>
-    </form>
-
-
-    <div class="over">
-        <div class="space">
-            <div class="flip">
-                <div class="inner">
-                    <div class="front">
-                        <div class="im">
-                            <img src="images/table.jpg" alt="table" height="300px">
-                        </div>
-                    </div>
-                    <div class="back">
-                        <h1>see your spending</h1>
-                    </div>
-                </div>
-            </div>
+        
+        <div>
+          <h3>Self Assessment Tools</h3>
+          <p>Take quick quizzes to evaluate your gambling habits and receive tailored tips for
+            improvement.</p>
         </div>
-        <div class="space">
-            <div class="flip">
-                <div class="inner">
-                    <div class="front">
-                        <div class="im">
-                            <img src="images/money.jpg" alt="money" height="300px">
-                        </div>
-                    </div>
-                    <div class="back">
-                        <h1>save your money</h1>
-                    </div>
-                </div>
-            </div>
+
+      
+        <div>
+          <h3>Reality Check Alerts</h3>
+          <p>Get periodic notifications about how long you've been playing and your current
+            spending. It helps you stay aware and in control.</p>
         </div>
-        <div class="space">
-            <div class="flip">
-                <div class="inner">
-                    <div class="front">
-                        <div class="im">
-                            <img src="images/slots.jpg" alt="slots" height="300">
-                        </div>
-                    </div>
-                    <div class="back">
-                        <h1>just because the house always wins it doesnt mean you have to lose</h1>
-                    </div>
-                </div>
-            </div>
+        
+        <div>
+          <h3>Game Recommendations</h3>
+          <p>Discover games that fit your style and budget, focusing on fun rather than high
+            stakes.</p>
         </div>
-    </div>
 
+      
 
-    <script>
-        function spend() {
-            // Get the value from the inputs
-            var rev = Number(document.getElementById("mRev").value);
-            var ex = Number(document.getElementById("mEx").value);
-            var cred = Number(document.getElementById("credit").value);
+        <div>
+          <h3>Community Support</h3>
+          <p>Join a community of responsible gamblers, share experiences, and access expert advice.</p>
+        </div>
+        
+        <div>
+          <h3>Resources and Helplines</h3>
+          <p>Easily access information on responsible gambling practices and support services.</p>
+        </div>
+        
+        <div>
+          <form action="">
+            <div>
+              <label for="">Monthly Revenue</label>
+              <input type="number" oninput="spend()">
+            </div>
+            
+            <div>
+              <label for="">Monthly Expenditure</label>
+              <input type="number" id="mEx" oninput="spend()">
+            </div>
+            
+            <div>
+              <label for="credit">Credit Score</label>
+              <input id="credit" type="number" oninput="spend()">
+            </div>
+            
+            <p id="ans">ANSWER</p>
+            
+          </form>
+          
+          <button onclick="estimate()">Estimate Based on Location</button>
+        </div>
+        
+        
 
-            var ans = rev - ex;
-
-            console.log(rev, ex);
-
-            // Update the num text
-            if (ans >= 1000 && cred > 300) {
-                ans = ans * .50;
-                document.getElementById("ans").innerText = ans;
-            } else if (ans >= 50000 && cred > 300) {
-                ans = ans * .75;
-                document.getElementById("ans").innerText = ans;
-            } else {
-                document.getElementById("ans").innerText = "Nuh uh fella";
-            }
-        }
-    </script>
-    </div>
-
-    <footer>
-        <p>Copyright 2024. BetWise. All rights reserved.</p>
-    </footer>
-
-    <script src="main.js"></script>
+      
+      <div class="">
+        <button>Start</button>
+        <button>Budgeting</button>
+      </div>
+  </main>
 </body>
-
 </html>
